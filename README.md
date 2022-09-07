@@ -1,1 +1,1 @@
-All mijn school opdrachten onder (LerenProgrameren) komen hier te staan
+Al my school projects under (LerenProgrameren) wil be posted here

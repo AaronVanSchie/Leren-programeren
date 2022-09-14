@@ -1,7 +1,4 @@
 # Aaron van Schie  opdracht: PizzaCalculator
-from tkinter import N
-
-
 print("Hoeveel small pizzas?")
 small = int(input())
 print("Hoeveel medium pizzas?")

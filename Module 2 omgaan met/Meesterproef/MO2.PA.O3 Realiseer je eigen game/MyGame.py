@@ -1,6 +1,6 @@
-
 from random import randint, random
 from time import sleep
+
 def Quests(vraag):
     while True:
         andwoord1 = input(vraag).lower()
@@ -144,8 +144,8 @@ if quest3 == "no" or quest3 == "nee":
 else:
     print()
 
-input("Narrator: The fight begins here is you weapong.")
-input(f"You achieved {randomweapon}.")
+input("Narrator: The fight begins here is you weapon.")
+print(f"You aquired",randomweapondict["Type"])
 print()
 input("Soldier Ala: Are you ready to die!")
 print()
@@ -179,7 +179,6 @@ while True:
 YOU DIED!!
         ''')
         break
-        exit()
     elif soldierhp - randomweapondict["Damage"] <= 0:
         print()
         print("Narrator: You have won the battle!")
@@ -190,6 +189,9 @@ YOU DIED!!
     soldiermdg = soldierdmg + 100 
     playerHp = playerHp - soldierdmg
     soldierhp = soldierhp - randomweapondict["Damage"]
+
+if playerHp - soldierdmg <= 0:
+    exit()
 input("Narrator: After winning your fight against Soldier Ala you walk towards King Arthur")
 print()
 input(f"{name}: Give me Farmer Hendricksons daughter i have won your battle!!")

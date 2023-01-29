@@ -1,0 +1,37 @@
+* {
+    margin: 15px;
+}
+
+h1 {
+    color: blue;
+}
+
+.first {
+    background: aquamarine;
+    padding: 1.5rem;
+}
+
+.first h2 {
+    color: red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.first p {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.second {
+    background: crimson;
+    padding: 1.5rem;
+}
+
+.second h2 {
+    color: aqua;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.second p {
+    font-size: 18px;
+    font-style: italic;
+}

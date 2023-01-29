@@ -1,0 +1,28 @@
+nav {
+    height: 100%;
+    width: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #A4BE7B;
+    list-style-type: none;
+    padding: 16px;
+}
+body{
+    background-color: #E5D9B6;
+    margin-left: 120px;
+    font: "Georgia" ;
+    font-style: italic;
+}
+h1{
+    color: #285430;
+}
+h2,h3{
+    color: #5F8D4E;
+}
+.tittle{
+    font-size: 30px;
+}
+a:hover{
+    color: #285430;
+}

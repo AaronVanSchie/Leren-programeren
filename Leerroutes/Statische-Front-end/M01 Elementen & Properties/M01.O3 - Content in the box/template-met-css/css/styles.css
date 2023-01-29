@@ -1,0 +1,10 @@
+.middag{
+    margin: 40px;
+    padding: 40px;
+    border: 20px dashed red;
+    background-color: beige;
+}
+body{
+    height: 200px;
+    width: 300px;
+}

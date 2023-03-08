@@ -1,15 +1,19 @@
 from random import randint
 from time import sleep
 
+andwoord1 = ""
+andwoord2 = ""
 
 def quests(vraag):
     while True:
         andwoord1 = input(vraag).lower()
         if andwoord1 == "ja" or andwoord1 == "yes":
             print()
+            andwoord1 = False
             break
         elif andwoord1 == "nee" or andwoord1 == "no":
             print(randomdeath)
+            andwoord1 = True
             break
         else:
             print()
@@ -21,9 +25,11 @@ def leftorright(vraag):
         andwoord2 = input(vraag).lower()
         if andwoord2 == "left" or andwoord2 == "links":
             print()
+            andwoord2 = False
             break
         elif andwoord2 == "rechts" or andwoord2 == "right":
             print()
+            andwoord2 = True
             break
         else:
             print()
@@ -82,7 +88,7 @@ while repeat == True:
     print()
 
     quest1 = quests("Narrotor: Would you like to accept the Farmer Hendrick his quest? ").lower()
-    if quest1 == "no" or quest1 == "nee":
+    if andwoord1:
         break
     else:
         punten += 1
@@ -100,7 +106,7 @@ while repeat == True:
     input("Narrator: After walking for 2 hours your road seems to split two ways.")
 
     leftorright1 = leftorright("Narrator: Do you want to take the left or right path? ").lower()
-    if leftorright1 == "right":
+    if andwoord2:
         input("Narrator: You havent found the hay bales.")
         input("Narrator: You starved to death.")
         break
@@ -118,7 +124,7 @@ while repeat == True:
     print()
 
     quest2 = quests("Narrator: Would you like to accept the Farmer Hendrick his quest? ")
-    if quest2 == "no" or quest2 == "nee":
+    if andwoord1:
         input("Hendrick killed u")
         break
     else:
@@ -132,7 +138,7 @@ while repeat == True:
     input("Narrator: After a few more miles the road splits up and you have to make a discision.")
 
     leftorright2 = leftorright("Narrator Wich way do you want to go Left or Right?")
-    if leftorright2 == "right" or leftorright2 == "rechts":
+    if andwoord2:
         input("Narrator: You sadly went the wrong way and never found his daughter or any food source.")
         input("Narrator: You starved to death.")
         break
@@ -168,7 +174,7 @@ while repeat == True:
         input("Narrator: You died of ligma")
         break
     quest3 = input("Narrator: Do you accept King Arthur his offer?")
-    if quest3 == "no" or quest3 == "nee":
+    if andwoord1:
         input("King Arthur: Are you scared or something?")
         input("King Arthur: I geus this is the last thing anyone wil remember about you")
         input(f"King Arthur: Was nice knowing you {name}.")
@@ -248,13 +254,7 @@ while repeat == True:
 
     YOU WON!!
     ''')
-    again = input("Would u like to play again? J/N ").upper()
-    if again == "J":
-        repeat = True
-    else:
-        repeat = False
-        print(f"Your final score is {punten}")
-        quit()
+    break
 
 again = input("Would u like to play again? J/N ").upper()
 if again == "J":

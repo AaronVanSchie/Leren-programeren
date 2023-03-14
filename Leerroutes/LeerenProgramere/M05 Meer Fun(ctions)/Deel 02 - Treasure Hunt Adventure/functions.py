@@ -28,12 +28,11 @@ def getPersonCashInGold(personCash:dict) -> float:
 
 def getJourneyFoodCostsInGold(people:int, horses:int) -> float:
     return round(copper2gold(((people*4)+(horses*3))*JOURNEY_IN_DAYS),2)
-    
 
 ##################### M04.D02.O5 #####################
 
 def getFromListByKeyIs(list:list, key:str, value:any) -> list:
-    pass
+    return friends
 
 def getAdventuringPeople(people:list) -> list:
     pass

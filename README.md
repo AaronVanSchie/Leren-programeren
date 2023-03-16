@@ -1,1 +1,1 @@
-Javascript  = Vandaag begin maken aan Buttons
+Javascript  = Horeica app afmaken/mooi maken

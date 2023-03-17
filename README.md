@@ -1,1 +1,1 @@
-Javascript  = Horeica app afmaken/mooi maken
+Python = veder komen met Treasure hunt

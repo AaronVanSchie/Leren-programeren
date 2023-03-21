@@ -1,8 +1,5 @@
 let alert = Number(prompt("geef een getal: ")) +2
 
-const listnum = []
-
-
 for (let i = 0; i < alert; i++){
     const nummer = []
     for (let z = 1; z < i; z++){

@@ -1,2 +1,2 @@
-Javascript CJV en buttons
+Javascript buttons 1.0
 

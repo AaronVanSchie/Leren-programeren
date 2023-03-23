@@ -1,2 +1,2 @@
-Javascript buttons 1.0
-
+Javascript buttons 2.0
+Python Treasure hunt

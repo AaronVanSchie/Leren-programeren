@@ -128,4 +128,3 @@ def ifOne(amount:int, yes:str, no:str, single='een') -> str:
     text = yes if amount == 1 else no
     amount = single if amount == 1 else amount
     return '{} {}'.format(amount, text).lstrip()
-# ik moet hiermee door werken man

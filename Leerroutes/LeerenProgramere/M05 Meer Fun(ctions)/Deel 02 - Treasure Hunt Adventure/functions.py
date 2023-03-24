@@ -19,10 +19,10 @@ def platinum2gold(amount:int) -> float:
 
 def getPersonCashInGold(personCash:dict) -> float:
     gold = 0
-    gold += platinum2gold(personCash['platinum'])
-    gold += personCash['gold']
-    gold += silver2gold(personCash['silver'])
-    gold += copper2gold(personCash['copper'])
+    gold += platinum2gold(personCash["platinum"])
+    gold += personCash["gold"]
+    gold += silver2gold(personCash["silver"])
+    gold += copper2gold(personCash["copper"])
     return gold
 
 ##################### M04.D02.O4 #####################
@@ -40,15 +40,15 @@ def getFromListByKeyIs(list:list, key:str, value:any) -> list:
     return niewlijstje
 
 def getAdventuringPeople(people:list) -> list:
-    return getFromListByKeyIs(people,'adventuring',True)
+    return getFromListByKeyIs(people,"adventuring",True)
 
 def getShareWithFriends(friends:list) -> int:
-    return getFromListByKeyIs(friends,'shareWith',True)
+    return getFromListByKeyIs(friends,"shareWith",True)
 
 def getAdventuringFriends(friends:list) -> list:
     newlist= []
     for teller in range (0,len(friends)):
-        if friends[teller]['adventuring'] and friends[teller]['shareWith']: 
+        if friends[teller]["adventuring"] and friends[teller]["shareWith"]: 
             newlist.append(friends[teller])
     return newlist
 
@@ -128,3 +128,4 @@ def ifOne(amount:int, yes:str, no:str, single='een') -> str:
     text = yes if amount == 1 else no
     amount = single if amount == 1 else amount
     return '{} {}'.format(amount, text).lstrip()
+# ik moet hiermee door werken man

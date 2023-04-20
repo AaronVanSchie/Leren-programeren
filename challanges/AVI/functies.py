@@ -33,41 +33,42 @@ def getFileContentAsString(textFile: str) -> str:
 
 # opdracht 1
 def getNumberOfCharacters(text: str) -> int:
-    COUNT_CHAR = 0
+    count_char = 0
     for character in text:
         if character in ALLOWED_IN_WORD:
-            COUNT_CHAR += 1
-    return COUNT_CHAR
+            count_char += 1
+    return count_char
 
 # opdracht 2
 def getNumberOfSentences(text: str) -> int:
-    COUNT_SEN = 0
-    for sentence in text:
-        if sentence in END_OF_SENTENCE:
-            COUNT_SEN += 1
-    return COUNT_SEN
+    count_sen = 0
+    for character in text:
+        if character in END_OF_SENTENCE:
+            count_sen += 1
+    return count_sen
 
 # opdracht 3
 def getNumberOfWords(text: str) -> int:
-    return len(text.split())
+    text.strip()
+    return len(text.split(" "))
 
 # opdracht 4
 def getAviScore(text: str) -> int:
-    WORD = getNumberOfWords(text)
-    SEN = getNumberOfSentences(text)
-    AV_WORD_PER_ZIN = WORD / SEN
+    word = getNumberOfWords(text)
+    sen = getNumberOfSentences(text)
+    Avarage = word / sen
 
-    if AV_WORD_PER_ZIN <= 7:
-        AVI_SCORE = 5
-    elif AV_WORD_PER_ZIN <=8 > 7:
-        AVI_SCORE = 6
-    elif AV_WORD_PER_ZIN <= 9 > 8:
-        AVI_SCORE = 7
-    elif AV_WORD_PER_ZIN <= 10 > 9:
-        AVI_SCORE = 8
-    elif AV_WORD_PER_ZIN <= 11 > 10:
-        AVI_SCORE = 11
-    elif AV_WORD_PER_ZIN > 11:
-        AVI_SCORE = 12
+    if Avarage <= 7:
+        Avi = 5
+    elif 8 >= Avarage > 7:
+        Avi = 6
+    elif 9 >= Avarage  > 8:
+        Avi = 7
+    elif 10 >= Avarage > 9:
+        Avi = 8
+    elif 11 >= Avarage > 10:
+        Avi = 11
+    elif Avarage > 11:
+        Avi = 12
 
-    return int(AVI_SCORE)
+    return int(Avi)

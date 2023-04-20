@@ -28,6 +28,4 @@ if getNumberOfWords(getText('data\easy1.txt')) == 11:
     print("Test geslaagd")
 else:
     print("Deze test is niet geslaagd")
-
-getAviScore(DIFFICULT_TEXT)
 # schrijf zelf nog een extra testen voor getNumberOfWords (gebruik test.txt).

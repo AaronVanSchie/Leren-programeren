@@ -57,15 +57,17 @@ def getAviScore(text: str) -> int:
     SEN = getNumberOfSentences(text)
     AV_WORD_PER_ZIN = WORD / SEN
 
-    if AV_WORD_PER_ZIN <=7 >8:
+    if AV_WORD_PER_ZIN <= 7:
         AVI_SCORE = 5
-    elif AV_WORD_PER_ZIN <=8 >9:
+    elif AV_WORD_PER_ZIN <=8 > 7:
         AVI_SCORE = 6
-    elif AV_WORD_PER_ZIN <=9 >10:
+    elif AV_WORD_PER_ZIN <= 9 > 8:
+        AVI_SCORE = 7
+    elif AV_WORD_PER_ZIN <= 10 > 9:
         AVI_SCORE = 8
-    elif AV_WORD_PER_ZIN <=10 >11:
+    elif AV_WORD_PER_ZIN <= 11 > 10:
         AVI_SCORE = 11
-    elif AV_WORD_PER_ZIN <=11:
+    elif AV_WORD_PER_ZIN > 11:
         AVI_SCORE = 12
 
     return int(AVI_SCORE)

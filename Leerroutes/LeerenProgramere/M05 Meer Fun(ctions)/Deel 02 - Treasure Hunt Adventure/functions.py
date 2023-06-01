@@ -28,7 +28,7 @@ def getPersonCashInGold(personCash:dict) -> float:
 ##################### M04.D02.O4 #####################
 
 def getJourneyFoodCostsInGold(people:int, horses:int) -> float:
-    return round(copper2gold(((people*4)+(horses*3))*JOURNEY_IN_DAYS),2)
+    return round(copper2gold(((people * 4) + (horses * 3)) * JOURNEY_IN_DAYS),2)
 
 ##################### M04.D02.O5 #####################
 
@@ -46,11 +46,11 @@ def getShareWithFriends(friends:list) -> int:
     return getFromListByKeyIs(friends,"shareWith",True)
 
 def getAdventuringFriends(friends:list) -> list:
-    newlist= []
+    Friendstraveling = []
     for teller in range (0,len(friends)):
         if friends[teller]["adventuring"] and friends[teller]["shareWith"]: 
-            newlist.append(friends[teller])
-    return newlist
+           Friendstraveling.append(friends[teller])
+    return Friendstraveling
 
 ##################### M04.D02.O6 #####################
 
@@ -66,10 +66,20 @@ def getTotalRentalCost(horses: int, tents: int) -> float:
 ##################### M04.D02.O7 #####################
 
 def getItemsAsText(items:list) -> str:
-    pass
+    return ', '.join([f'{item["amount"]}{item["unit"]} {item["name"]}' for item in items])
 
-def getItemsValueInGold(items:list) -> float:
-    pass
+def getItemsValueInGold(items: list) -> float:
+    totalgold = 0
+    for item in items:
+        if item["price"]["type"] == "gold":
+            totalgold += item["amount"] * item["price"]["amount"]
+        elif item["price"]["type"] == "silver":
+            totalgold += silver2gold(item["amount"] * item["price"]["amount"])
+        elif item["price"]["type"] == "copper":
+            totalgold += copper2gold(item["amount"] * item["price"]["amount"])
+        elif item["price"]["type"] == "platinum":
+            totalgold += platinum2gold(item["amount"] * item["price"]["amount"])
+    return totalgold
 
 ##################### M04.D02.O8 #####################
 

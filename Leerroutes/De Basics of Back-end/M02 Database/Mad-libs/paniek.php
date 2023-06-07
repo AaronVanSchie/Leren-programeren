@@ -4,6 +4,7 @@
     <title>Keuzes</title>
     <link rel="stylesheet" href="needed/style.css">
     <?php include 'needed/footer.php'?>
+<<<<<<< HEAD
     <?php include 'needed/buttons.php'?>
     <?php include 'library/checkspaniek.php'?>
 </head>
@@ -49,4 +50,13 @@
             echo '"', $verveelt, ', Sire"';
         }
     ?>
+=======
+</head>
+
+
+    <div class = "items">
+            <a href="onkunde.php">Onkunde</a> | 
+            <a href="index.php">Index</a> 
+    </div>
+>>>>>>> 03c70c075dc97ed285a59b6551469dd70dce0d3d
 </html>

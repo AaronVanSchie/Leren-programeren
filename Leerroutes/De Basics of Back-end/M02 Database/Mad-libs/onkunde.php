@@ -4,9 +4,19 @@
     <title>Keuzes</title>
     <link rel="stylesheet" href="needed/style.css">
     <?php include 'needed/footer.php'?>
+<<<<<<< HEAD
     <?php include 'needed/buttons.php'?>
     <?php include 'library/checksonkunde.php'?>
 </head>
+=======
+    <?php include 'library/checksonkunde.php'?>
+</head>
+
+    <div class = "items">
+            <a href="paniek.php">Er heerst Paniek</a> |
+            <a href="index.php">Index</a>
+    </div>
+>>>>>>> 03c70c075dc97ed285a59b6551469dd70dce0d3d
     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
             Wat zou je graag willen kunnen? <input type="text" name="kunnen" value = "<?php echo $kunnen;?>">
             <span class="error">* <?php echo $kunnenErr;?></span> <br><br>
@@ -32,7 +42,11 @@
             <input type="submit">  
     </form>
     <?php
+<<<<<<< HEAD
         if ($everything1 != ""){
+=======
+        if ($everything != ""){
+>>>>>>> 03c70c075dc97ed285a59b6551469dd70dce0d3d
             echo "<br>";
             echo "Er zijn veel mensen die niet kunnen " , $kunnen, ". <br>"; 
             echo "Neem nou ", $opschieten, " zelfs met de hulp van een ", $vakantie, " of zelfs ", $getal, " kan hij niet ", $kunnen,". <br>";

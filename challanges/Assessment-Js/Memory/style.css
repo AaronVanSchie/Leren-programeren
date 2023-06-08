@@ -1,0 +1,17 @@
+#card {
+    width: 50px;
+    height: 50px;
+    background-color: #bbb;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+#card#flipped {
+    background-color: #333;
+    color: #fff;
+}

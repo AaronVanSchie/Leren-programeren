@@ -52,8 +52,5 @@ function test_input($data) {
   return $data;
 }
 
-<<<<<<< HEAD
-$everything1 = $kunnen && $opschieten && $getal && $vakantie && $goed && $slecht && $overkomen;
-=======
 $everything = $kunnen && $opschieten && $getal && $vakantie && $goed && $slecht && $overkomen;
->>>>>>> 03c70c075dc97ed285a59b6551469dd70dce0d3d
+

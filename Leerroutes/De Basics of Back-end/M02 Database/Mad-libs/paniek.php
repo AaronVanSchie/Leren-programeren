@@ -35,7 +35,7 @@
         <input type="submit">  
     </form>
     <?php
-        if ($everything2 != ""){
+        if ($everything1 != ""){
             echo "<br>";
             echo "Er heerst paniek in het koninkrijk ", $wonen, ". <br>"; 
             echo "Koning ", $spijbel, " is ten einde raad en als koning ", $spijbel, " ten einde raad is, dan roept hij zijn ten-einde-raadsheer ", $persoon, ". <br> <br>";

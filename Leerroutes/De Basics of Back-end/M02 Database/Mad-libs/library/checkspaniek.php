@@ -59,4 +59,4 @@ function test_input($data) {
   return $data;
 }
 
-$everything2 = $huisdier && $persoon && $wonen && $verveelt && $speelgoed && $spijbel && $kopen && $hobby;
+$everything1 = $huisdier && $persoon && $wonen && $verveelt && $speelgoed && $spijbel && $kopen && $hobby;

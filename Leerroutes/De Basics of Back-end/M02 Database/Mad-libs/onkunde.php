@@ -4,13 +4,9 @@
     <title>Keuzes</title>
     <link rel="stylesheet" href="needed/style.css">
     <?php include 'needed/footer.php'?>
+    <?php include 'needed/buttons.php'?>
     <?php include 'library/checksonkunde.php'?>
 </head>
-
-    <div class = "items">
-            <a href="paniek.php">Er heerst Paniek</a> |
-            <a href="index.php">Index</a>
-    </div>
     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
             Wat zou je graag willen kunnen? <input type="text" name="kunnen" value = "<?php echo $kunnen;?>">
             <span class="error">* <?php echo $kunnenErr;?></span> <br><br>

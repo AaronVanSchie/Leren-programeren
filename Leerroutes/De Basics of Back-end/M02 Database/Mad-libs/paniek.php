@@ -4,6 +4,7 @@
     <title>Keuzes</title>
     <link rel="stylesheet" href="needed/style.css">
     <?php include 'needed/footer.php'?>
+    <?php include 'needed/buttons.php'?>
     <?php include 'library/checkspaniek.php'?>
 </head>
     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
